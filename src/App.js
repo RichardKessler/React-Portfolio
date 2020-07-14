@@ -1,11 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
 
-import Footer from './components/Footer/index.js'
+import Footer from './components/Footer/Footer';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import PortfolioPage from './pages/PortfolioPage';
 
 
 class App extends React.Component {
@@ -44,7 +48,7 @@ class App extends React.Component {
     return (
       <Router>
         <Container className='p-0' fluid={true}>
-          
+
           <Navbar className='border-bottom' bg='transparent' expand='lg'>
             <Navbar.Brand>Richard Kessler</Navbar.Brand>
             <Navbar.Toggle className='border-0' aria-controls='navbar-toggle' />
@@ -55,9 +59,15 @@ class App extends React.Component {
                 <Link className='nav-link' to='/portfolio' >Portfolio</Link>
                 <Link className='nav-link' to='/resume' >Resume</Link>
                 <Link className='nav-link' to='/contact' >Contact</Link>
+
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+          <Route path='/' exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} />} />
+          <Route path='/about' exact render={() => <AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} />} />
+          <Route path='/portfolio' exact render={() => <PortfolioPage title={this.state.portfolio.title}  />} />
+          <Route path='/resume' exact render={() => <HomePage title={this.state.resume.title} />} />
+          <Route path='/contact' exact render={() => <ContactPage title={this.state.contact.title} subTitle={this.state.contact.subTitle} />} />
 
           <Footer />
         </Container>
