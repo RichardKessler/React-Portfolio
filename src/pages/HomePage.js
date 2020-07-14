@@ -1,9 +1,10 @@
 import React from 'react';
+import Hero from '../components/Jumbotron';
 
 function HomePage(props) {
 
     return (
-        <p>Home Page Works!</p>
+        <Hero title={props.title} subTitle={props.subTitle} text={props.text} />
     );
 }
 

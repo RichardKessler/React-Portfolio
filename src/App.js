@@ -11,7 +11,14 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import PortfolioPage from './pages/PortfolioPage';
 
-
+const styles = {
+  brand: {
+    color: 'snow'
+  },
+  navLinks: {
+    color: 'snow'
+  }
+}
 class App extends React.Component {
 
   constructor(props) {
@@ -27,7 +34,8 @@ class App extends React.Component {
       ],
       home: {
         title: 'Richard Kessler',
-        subTitle: 'Full-Stack Developer'
+        subTitle: 'Full-Stack Developer',
+        text: 'Check out my full portfoilo'
       },
       about: {
         title: 'About Me'
@@ -49,21 +57,21 @@ class App extends React.Component {
       <Router>
         <Container className='p-0' fluid={true}>
 
-          <Navbar className='border-bottom' bg='transparent' expand='lg'>
-            <Navbar.Brand>Richard Kessler</Navbar.Brand>
+          <Navbar className='border-bottom' expand='lg'>
+            <Navbar.Brand style={styles.brand}>Richard Kessler</Navbar.Brand>
             <Navbar.Toggle className='border-0' aria-controls='navbar-toggle' />
             <Navbar.Collapse id='navbar-toggle'>
               <Nav className='ml-auto'>
-                <Link className='nav-link' to='/' >Home</Link>
-                <Link className='nav-link' to='/about' >About</Link>
-                <Link className='nav-link' to='/portfolio' >Portfolio</Link>
-                <Link className='nav-link' to='/resume' >Resume</Link>
-                <Link className='nav-link' to='/contact' >Contact</Link>
+                <Link className='nav-link' style={styles.navLinks} to='/' >Home</Link>
+                <Link className='nav-link' style={styles.navLinks} to='/about' >About</Link>
+                <Link className='nav-link' style={styles.navLinks} to='/portfolio' >Portfolio</Link>
+                <Link className='nav-link' style={styles.navLinks} to='/resume' >Resume</Link>
+                <Link className='nav-link' style={styles.navLinks} to='/contact' >Contact</Link>
 
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <Route path='/' exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} />} />
+          <Route path='/' exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
           <Route path='/about' exact render={() => <AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} />} />
           <Route path='/portfolio' exact render={() => <PortfolioPage title={this.state.portfolio.title}  />} />
           <Route path='/resume' exact render={() => <HomePage title={this.state.resume.title} />} />
