@@ -13,7 +13,7 @@ import PortfolioPage from './pages/PortfolioPage';
 
 const styles = {
   brand: {
-    color: 'snow'
+    color: 'darkorange'
   },
   navLinks: {
     color: 'snow'
@@ -35,7 +35,7 @@ class App extends React.Component {
       home: {
         title: 'Richard Kessler',
         subTitle: 'Full-Stack Developer',
-        text: 'Check out my full portfoilo'
+        text: 'Always learning, Always determined, Never stopping'
       },
       about: {
         title: 'About Me'
