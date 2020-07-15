@@ -11,7 +11,7 @@ function Footer() {
             <Container fluid={true}>
                 <Row className='border-top justify-content-between p-3'>
                     <Col className='p-0' md={3}>
-                        Richard Kessler
+                        RK Full-Stack Developer
                     </Col>
                     <Col className='p-0 d-flex justify-content-end' md={3} >
                         This site made by Richard Kessler

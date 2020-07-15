@@ -10,6 +10,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import PortfolioPage from './pages/PortfolioPage';
+import ResumePage from './pages/Resume';
 
 const styles = {
   brand: {
@@ -41,7 +42,9 @@ class App extends React.Component {
         title: 'About Me'
       },
       portfolio: {
-        title: 'My Portfolio'
+        title: 'My Portfolio',
+        subTitle: 'Some of the projects that I have done so far',
+        text: 'Click on a card to see more info and get a link to that application'
       },
       resume: {
         title: 'Resume'
@@ -73,8 +76,8 @@ class App extends React.Component {
           </Navbar>
           <Route path='/' exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
           <Route path='/about' exact render={() => <AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} />} />
-          <Route path='/portfolio' exact render={() => <PortfolioPage title={this.state.portfolio.title}  />} />
-          <Route path='/resume' exact render={() => <HomePage title={this.state.resume.title} />} />
+          <Route path='/portfolio' exact render={() => <PortfolioPage title={this.state.portfolio.title} subTitle={this.state.portfolio.subTitle} text={this.state.portfolio.text} />} />
+          <Route path='/resume' exact render={() => <ResumePage title={this.state.resume.title} />} />
           <Route path='/contact' exact render={() => <ContactPage title={this.state.contact.title} subTitle={this.state.contact.subTitle} />} />
 
           <Footer />

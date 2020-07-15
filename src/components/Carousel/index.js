@@ -86,13 +86,13 @@ class Carousel extends React.Component {
 
     makeItems = (items) => {
         return this.state.items.map(item => {
-            return <Card item={item} onClick={(e => this.handleCardClick(item.id, e))} key={item.id} />
+            return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} />
         })
     }
 
 render() {
     return(
-        <Container fluid={true}>
+        <Container className='RK' fluid={true}>
             <Row className='justify-content-around'>
                 {this.makeItems(this.state.itmes)}
             </Row>
