@@ -40,6 +40,17 @@ code {
   font-size: 16px;
   margin: 0px;
 }
+
+.c-card {
+  margin: 20px;
+}
+
+.c-card-image {
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+}
+
 .RK {
   background-color: black;
 }
@@ -51,4 +62,9 @@ code {
 
 .push{
 height: 100px;
+}
+
+.bb {
+  color: black;
+  font-weight: bolder;
 }

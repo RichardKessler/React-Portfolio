@@ -50,7 +50,9 @@ class App extends React.Component {
         title: 'Resume'
       },
       contact: {
-        title: 'Contact Me'
+        title: 'Contact Me',
+        subTitle: 'Gmail: KesslerRichardJ@gmail.com',
+        text: 'For my Github and LinkedIn profiles please click the view link below'
       }
     }
   }
@@ -78,7 +80,7 @@ class App extends React.Component {
           <Route path='/about' exact render={() => <AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} />} />
           <Route path='/portfolio' exact render={() => <PortfolioPage title={this.state.portfolio.title} subTitle={this.state.portfolio.subTitle} text={this.state.portfolio.text} />} />
           <Route path='/resume' exact render={() => <ResumePage title={this.state.resume.title} />} />
-          <Route path='/contact' exact render={() => <ContactPage title={this.state.contact.title} subTitle={this.state.contact.subTitle} />} />
+          <Route path='/contact' exact render={() => <ContactPage title={this.state.contact.title} subTitle={this.state.contact.subTitle} text={this.state.contact.text} />}  />
 
           <Footer />
         </Container>
