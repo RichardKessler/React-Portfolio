@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/Jumbotron';
-import Carousel from '../components/Carousel';
+
 
 function ResumePage(props){
 
