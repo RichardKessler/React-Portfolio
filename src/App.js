@@ -52,7 +52,7 @@ class App extends React.Component {
       contact: {
         title: 'Contact Me',
         subTitle: 'Gmail: KesslerRichardJ@gmail.com',
-        text: 'For my Github and LinkedIn profiles please click the view link below'
+        text: 'For my Github and LinkedIn profiles please click on the icon then click view'
       }
     }
   }
