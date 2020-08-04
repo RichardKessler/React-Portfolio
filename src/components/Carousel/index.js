@@ -22,6 +22,7 @@ class Carousel extends React.Component {
                     subTitle: 'Go out and find your adventure!',
                     imgSrc: NPS,
                     link: 'https://parks-and-weather.herokuapp.com/',
+                    github: 'https://github.com/RichardKessler/Project-2',
                     selected: false
                 },
                 {
@@ -30,6 +31,7 @@ class Carousel extends React.Component {
                     subTitle: 'Get that job you always wanted, but do your research first',
                     imgSrc: Jobs,
                     link: 'https://richardkessler.github.io/Job-and-News-Search/',
+                    github: 'https://github.com/RichardKessler/Job-and-News-Search',
                     selected: false
                 },
                 {
@@ -38,6 +40,7 @@ class Carousel extends React.Component {
                     subTitle: 'Check the weather before making plans',
                     imgSrc: Weather,
                     link: 'https://richardkessler.github.io/Weather-Dashboard/',
+                    github: 'https://github.com/RichardKessler/Weather-Dashboard',
                     selected: false
                 },
                 {
@@ -46,6 +49,7 @@ class Carousel extends React.Component {
                     subTitle: 'Make and change plans throughout your day with ease',
                     imgSrc: Workday,
                     link: 'https://richardkessler.github.io/Day-Planner/',
+                    github: 'https://github.com/RichardKessler/Day-Planner',
                     selected: false
                 },
                 {
@@ -54,6 +58,7 @@ class Carousel extends React.Component {
                     subTitle: 'Easily find your employees non-sensitive information',
                     imgSrc: Employees,
                     link: 'https://frosty-knuth-dfbbf2.netlify.app/',
+                    github: 'https://github.com/RichardKessler/EmployeeDirectory',
                     selected: false
                 },
                 {
@@ -62,6 +67,7 @@ class Carousel extends React.Component {
                     subTitle: 'Keep track of your workouts and see all of your fitness gains',
                     imgSrc: Fitness,
                     link: 'https://workout-plan-2020.herokuapp.com/?id=5f03ac50b4664a00175102c9',
+                    github: 'https://github.com/RichardKessler/Workout-Plan',
                     selected: false
                 }
             ]
