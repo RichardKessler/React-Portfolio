@@ -56,7 +56,7 @@ class Contact extends Component {
         return(
             <Container className='RK' fluid={true}>
                 <Row className='justify-content-around'>
-                    {this.makeItems(this.state.itmes)}
+                    {this.makeItems(this.state.items)}
                 </Row>
             </Container>
         )
