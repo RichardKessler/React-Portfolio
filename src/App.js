@@ -17,7 +17,7 @@ const styles = {
     color: 'darkorange'
   },
   navLinks: {
-    color: 'snow'
+    color: 'darkorange'
   }
 }
 class App extends React.Component {
@@ -62,7 +62,7 @@ class App extends React.Component {
       <Router>
         <Container className='p-0' fluid={true}>
 
-          <Navbar className='border-bottom' expand='lg'>
+          <Navbar className='border-bottom' bg='transparent' expand='lg'>
             <Navbar.Brand style={styles.brand}>Richard Kessler</Navbar.Brand>
             <Navbar.Toggle className='border-0' aria-controls='navbar-toggle' />
             <Navbar.Collapse id='navbar-toggle'>
