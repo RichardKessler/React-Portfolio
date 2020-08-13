@@ -11,16 +11,16 @@ function AboutPage(props) {
         <Hero title={props.title} subTitle={props.subTitle} text={props.text} />
         <div>
         <AboutText>
-            <p>Hello my name is Richard Kessler.  I needed a career change after an accident in 2018.  I was finally able to invest into myself and learn to become a developer.  I am a sutdent attending UNC's Coding Bootcamp in 2020.  After graduation I look forward to making the most out of every opportunity that I get.  I am very determined to learn and apply myself to becomeing the best developer that I can be.</p>
+            <p>Hello my name is Richard Kessler.  I am a gradutate from UNC Chapel Hill's Full-Stack Developer Bootcamp.  This intensive 24-week bootcamp gave me the skills and knowledge to succeed.  I have a great grasp on the MERN stack (MongoDB, Express.js, React.js, Node.js), strong front-end knowledge including working with multiple frameworks, and an ever expanding library of different packages for back-end developement.  I am upbeat and always accept whatever challenges come my way.</p>
             <br></br>
 
             <h2 className='border-bottom bb'>My Skills Include:</h2>
 
             <br></br>
-            <p>Specialities:  HTML5, CSS3, JavaScript, ES6, VS Code, React.JS, Node.JS</p>
+            <p>Specialities:  HTML5, CSS3, JavaScript, ES6, VS Code, React.JS, Node.JS, MERN Stack</p>
             <p>Framework/Libraries: Bootstrap, Materialize, Bulma,Sequelize, Mongoose, Node.JS, jQuery, Express.JS, React.JS</p>
             <p>Database: MySQL, MongoDB </p>
-            <p>Technologies: Heroku, Netlify</p>
+            <p>Technologies: GitPages, Heroku, Netlify</p>
             <p>Version Control: Git, GitHub, GitLab</p>
         </AboutText>
         </div>
